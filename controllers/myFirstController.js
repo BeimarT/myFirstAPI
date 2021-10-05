@@ -3,8 +3,8 @@ module.exports.helloWorld = (req, res) => {          // añadir module.exports.h
    //const responseStatus = 200;
     let responseObj ={};
     const array = ["Gerard", "Khadija","Alex","Roger","Xavier","Eric","Miquel","Alba","Raul","Marc","Jordi","Marc","Pol"];
-    responseObj.alumnos = array;
-    responseObj.contadorDeAlumnos = array.length;
+    responseObj.alumn = array;
+    responseObj.contDeAlumnos = array.length;
     const responseStatus = 200;
 
     res.status(responseStatus).send(responseObj);
