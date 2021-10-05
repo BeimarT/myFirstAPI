@@ -1,5 +1,11 @@
 module.exports.helloWorld = (req, res) => {          // añadir module.exports.helloWorl para exportar req = peticion de usuario res = respuesta
-    const responseObj = {msg: 'Hello World!'};
+   // const responseObj = {msg: 'Hello World!'};
+   //const responseStatus = 200;
+    let responseObj ={};
+    $array = ["Gerard", "Khadija","Alex","Roger","Xavier","Eric","Miquel","Alba","Raul","Marc","Jordi","Marc","Pol"];
+    responseObj.alumnos = array;
+    responseObj.contadorDeAlumnos = array.lenght;
     const responseStatus = 200;
+
     res.status(responseStatus).send(responseObj);
 }
