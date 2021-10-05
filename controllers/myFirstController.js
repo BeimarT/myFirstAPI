@@ -2,7 +2,7 @@ module.exports.helloWorld = (req, res) => {          // añadir module.exports.h
    // const responseObj = {msg: 'Hello World!'};
    //const responseStatus = 200;
     let responseObj ={};
-    $array = ["Gerard", "Khadija","Alex","Roger","Xavier","Eric","Miquel","Alba","Raul","Marc","Jordi","Marc","Pol"];
+    const array = ["Gerard", "Khadija","Alex","Roger","Xavier","Eric","Miquel","Alba","Raul","Marc","Jordi","Marc","Pol"];
     responseObj.alumnos = array;
     responseObj.contadorDeAlumnos = array.lenght;
     const responseStatus = 200;
