@@ -8,8 +8,8 @@ module.exports.createConnection = async () => {
         );
 
         console.log(`DB Connected!`);
-        mongoose.connection.on(`error`, (error) => {
-        console.log(`ERROR The connection was interrupted: `, error);
+        mongoose.connection.on('error', (error) => {
+        console.log('ERROR The connection was interrupted: ', error);
         });
     } catch (error) {
     console.log(`ERROR Cannot connect to the DB: `, error);
