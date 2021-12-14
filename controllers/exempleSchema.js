@@ -8,6 +8,7 @@ const users = [{id: 1, name:'John'},
 const status = {
     ok: 200,
     notFound: 404,
+    created : 201,
 }
 module.exports = {
     list: (req, res) => {
@@ -28,5 +29,12 @@ module.exports = {
             const msg = {error: 'User Id not found'};
             res.status(status.notFound).send(msg);
         }
-    }
+    },
+    create: (req, res) => {
+        const user = req.body;
+        user.id = users.length +1;
+        users.push(user);
+
+        res.status(status.created).send(user);
+    },
 }
