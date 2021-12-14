@@ -23,7 +23,7 @@ app.use('/api/v1/s05ex3', require('./routes/s05ex3Routes'));
 app.use('/api/v1/s06ex1', require('./routes/s06ex1Routes'));
 app.use('/api/v1/s06ex2', require('./routes/s06ex2Routes'));
 // app.use('/api/v1/s07ex1', require('./routes/s07ex1Routes'));
-// app.use('/api/v1/joi', require ('./routes/exempleSchemaRouter'));
+app.use('/api/v1/joi', require ('./routes/exempleSchemaRouter'));
 
 
 app.listen(process.env.PORT || 3000, () =>{    // executar app por el puerto determinado    //Sempre es podra executar desde aquest port
