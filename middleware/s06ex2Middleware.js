@@ -1,5 +1,5 @@
 const { query } = require('express');
-const c = require('../constants.js/constants');
+const c = require('../constants/constants');
 
 
 module.exports.checkNumQueryParam = (req, res, next) => {

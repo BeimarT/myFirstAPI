@@ -1,4 +1,4 @@
-const c = require('../constants.js/constants');
+const c = require('../constants/constants');
 
 module.exports.factorial = (req, res) => {
     const num = req.query.num;

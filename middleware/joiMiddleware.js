@@ -1,5 +1,5 @@
 const  Joi = require('@hapi/joi');
-const c = require('../constants.js/constants');
+const c = require('../constants/constants');
 
 module.exports.validate = (schema, inputValidation) => {     //aquesta funció retorna middleware
     return (req, res, next) => {

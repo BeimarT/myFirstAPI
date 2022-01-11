@@ -1,4 +1,4 @@
-const c = require('../constants.js/constants');
+const c = require('../constants/constants');
 
 module.exports.checkNumQueryParam = (req, res, next) => {
     if(req.query.num){

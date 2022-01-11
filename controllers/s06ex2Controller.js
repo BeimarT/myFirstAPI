@@ -1,4 +1,4 @@
-const c = require('../constants.js/constants');
+const c = require('../constants/constants');
 
 module.exports.caja = (req, res) => {
     let secuencia = [2, 4, 8, 9, 7, 3, 5, 6];

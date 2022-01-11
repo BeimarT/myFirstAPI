@@ -26,6 +26,7 @@ app.use('/api/v1/s06ex2', require('./routes/s06ex2Routes'));
 app.use('/api/v1/joi', require ('./routes/exempleSchemaRouter'));
 
 
+
 app.listen(process.env.PORT || 3000, () =>{    // executar app por el puerto determinado    //Sempre es podra executar desde aquest port
 
 console.log(`My First API running on port: ${process.env.POrt}`)
